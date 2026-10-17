@@ -30,5 +30,3 @@ Adresse I2C : `0x27`.
 | HREF | 7 |
 | PCLK | 13 |
 | PWDN / RESET | non utilisés (-1) |
-
-Ajouter ici un schéma ou une photo du montage dans `docs/images/`.
