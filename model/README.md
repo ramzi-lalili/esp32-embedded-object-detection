@@ -1,28 +1,30 @@
-# Modèle Edge Impulse
+# Edge Impulse Model
 
-Le modèle n'est pas stocké dans ce dépôt (fichiers générés et volumineux).
-Il s'intègre au projet sous forme de **librairie Arduino** exportée depuis Edge Impulse.
+The model is not stored in this repository because its generated files are large.
 
-## Informations à compléter
+It is integrated into the project as an **Arduino library** exported from Edge Impulse.
 
-| Élément | Valeur |
+## Information to Complete
+
+| Item | Value |
 |---|---|
-| Projet Edge Impulse | (lien) |
-| Type | Classification d'images / Détection d'objets |
-| Classes | (liste) |
-| Taille du dataset | (nombre d'images) |
-| Résolution d'entrée | (ex. 96x96) |
-| Précision | (ex. 92 %) |
+| Edge Impulse Project | (link) |
+| Type | Image Classification / Object Detection |
+| Classes | (list) |
+| Dataset Size | (number of images) |
+| Input Resolution | (e.g., 96×96) |
+| Accuracy | (e.g., 92%) |
 
-## Exporter la librairie
+## Exporting the Library
 
-1. Dans Edge Impulse : **Deployment > Arduino library > Build**.
-2. Télécharger le `.zip`.
-3. Arduino IDE : `Croquis > Inclure une bibliothèque > Ajouter la bibliothèque .ZIP`.
+1. In Edge Impulse, navigate to **Deployment > Arduino library > Build**.
+2. Download the generated `.zip` file.
+3. In Arduino IDE, select `Sketch > Include Library > Add .ZIP Library`.
 
-## Nom de la librairie
+## Library Name
 
-Le sketch inclut `<SECURTI_inferencing.h>`. Le nom du header dépend du nom du
-projet Edge Impulse (`<nom_du_projet>_inferencing.h`). Si ta librairie porte un
-autre nom (par exemple `IMAGE_inferencing.h`), modifie la ligne `#include`
-dans le fichier `.ino` pour qu'elle corresponde.
+The sketch includes `<SECURTI_inferencing.h>`. The header filename depends on the name of the Edge Impulse project and follows this format:
+
+`<project_name>_inferencing.h`
+
+If your library has a different name (for example, `IMAGE_inferencing.h`), update the `#include` directive in the `.ino` file to match the actual header filename.
