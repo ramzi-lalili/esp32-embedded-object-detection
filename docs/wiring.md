@@ -1,6 +1,6 @@
-# Câblage
+# Wiring
 
-## Écran LCD I2C 16x2
+## 16×2 I2C LCD Display
 
 | LCD | ESP32-S3 |
 |---|---|
@@ -9,9 +9,9 @@
 | VCC | 5 V |
 | GND | GND |
 
-Adresse I2C : `0x27`.
+I2C address: `0x27`.
 
-## Caméra OV2640
+## OV2640 Camera
 
 | Signal | GPIO |
 |---|---|
@@ -29,4 +29,4 @@ Adresse I2C : `0x27`.
 | VSYNC | 6 |
 | HREF | 7 |
 | PCLK | 13 |
-| PWDN / RESET | non utilisés (-1) |
+| PWDN / RESET | Not used (`-1`) |
