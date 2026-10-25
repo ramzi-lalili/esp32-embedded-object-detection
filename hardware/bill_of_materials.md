@@ -1,9 +1,9 @@
-# Liste du matériel
+# Bill of Materials
 
-| Qté | Composant | Remarque |
+| Qty. | Component | Notes |
 |---|---|---|
-| 1 | Carte ESP32-S3 avec PSRAM OPI | Brochage type ESP32-S3-EYE |
-| 1 | Caméra OV2640 | Intégrée ou en module |
-| 1 | Écran LCD 16x2 avec module I2C | Adresse 0x27 |
-| 1 | Câble USB | Alimentation et programmation |
-| - | Fils de connexion | |
+| 1 | ESP32-S3 board with OPI PSRAM | ESP32-S3-EYE-style pinout |
+| 1 | OV2640 camera | Integrated or standalone module |
+| 1 | 16×2 LCD with I2C module | I2C address: `0x27` |
+| 1 | USB cable | Power supply and programming |
+| - | Jumper wires | For connecting the components |
